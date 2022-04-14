@@ -1,0 +1,853 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+    z-index: 3;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 32px;
+}
+
+.logo-alt {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    float: left;
+    position: absolute;
+    display: none;
+}
+
+.logo-alt img {
+    width: 100px;
+    height: auto;
+    clip-path: circle();
+}
+
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:not(:nth-child(-n+5)) {
+    font-size: 24px;
+    padding: 3px 10px;
+}
+
+.menu li:nth-child(5) {
+    border: 1px solid rgb(0, 187, 187);
+    border-radius: 20px;
+}
+
+.menu li:nth-child(5):hover {
+    background-color: rgb(0, 187, 187);
+}
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.banner {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    background-color: black;
+    /* border: 1px solid red; */
+}
+
+.banner-wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.banner .banner-text {
+    width: 65%;
+    /* height: 100%; */
+    z-index: 2;
+    display: flex;
+    /* border: 1px solid red; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: -webkit-linear-gradient(0deg, black, black, transparent);
+    background-image: -moz-linear-gradient(0deg, black, black, transparent);
+    background-image: -o-linear-gradient(0deg, black, black, transparent);
+}
+
+.banner .banner-image {
+    width: 35%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid yellow; */
+}
+
+.banner .banner-image img {
+    width: 600px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 75%;
+    transform: translate(-70%, -50%);
+}
+
+.banner .banner-text .text {
+    /* top: 60%;
+    left: 0;
+    transform: translate(0%, 60%); */
+    margin-left: 20px;
+}
+
+.banner .banner-text .text h1 {
+    font-size: 40px;
+    padding: 10px;
+    color: #777;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+.banner .banner-text .text p {
+    font-size: 25px;
+    padding: 10px;
+    color: #555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: lowercase;
+}
+
+blockquote {
+    color: #888;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+#services {
+    position: relative;
+    margin-top: 60px;
+    max-width: 900px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+#project {
+    position: relative;
+    margin-top: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services h1,
+#about h1,
+#project h1,
+#contact h1 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.services-wrapper {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    transform: translateY(10%);
+}
+
+.data-analysis,
+.data-analytics,
+.dashboard,
+.web-development {
+    width: calc(100%/4);
+    height: auto;
+    display: block;
+    margin: 20px;
+}
+
+.data-analysis .image img,
+.data-analytics .image img,
+.dashboard .image img,
+.web-development .image img {
+    width: 100%;
+    height: 100px;
+}
+
+.data-analysis .text-wrap,
+.data-analytics .text-wrap,
+.dashboard .text-wrap,
+.web-development .text-wrap {
+    width: 100%;
+    padding: 10px;
+}
+
+.data-analysis .text-wrap h2,
+.data-analytics .text-wrap h2,
+.dashboard .text-wrap h2,
+.web-development .text-wrap h2 {
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #555;
+}
+
+.data-analysis .text-wrap p,
+.data-analytics .text-wrap p,
+.dashboard .text-wrap p,
+.web-development .text-wrap p {
+    font-size: 12px;
+    color: #777;
+}
+
+#about {
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    height: 80vh;
+}
+
+#contact {
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+#about .about-me,
+#contact .my-contact {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact .my-contact {
+    color: #777;
+    text-align: center;
+    font-size: 24px;
+}
+
+#about .about-me .wrapper p {
+    font-size: 16px;
+    color: #777;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.project {
+    max-width: 900px;
+    display: block;
+    position: relative;
+}
+
+.projects {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid black;
+}
+
+.projects .project-picture {
+    width: 40%;
+    height: 100%;
+    background-color: #333;
+}
+
+.projects .project-text {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects .project-text h2 {
+    color: #000;
+}
+
+.projects .project-text h3 {
+    color: teal;
+}
+
+.projects .project-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.read-more-btn {
+    margin-top: 15px;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .01em solid #777;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation-delay: 5s;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #777;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+}
+
+.sticky+.container {
+    padding-top: 60px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+    .nav ul {
+        width: 70%;
+        /* border: 1px solid green; */
+    }
+    .nav ul li {
+        padding: 5px;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: black;
+        /* border: 1px solid red; */
+    }
+    .banner-wrapper {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        /* border: 1px solid green; */
+    }
+    .banner .banner-text {
+        width: 100%;
+        background-image: none;
+        z-index: 2;
+        display: flex;
+    }
+    .banner .banner-image {
+        width: 0px;
+        display: none;
+        /* border: 1px solid yellow; */
+    }
+    .banner .banner-image img {
+        width: 0px;
+        display: none;
+    }
+    .banner .banner-text .text {
+        margin-left: 10px;
+    }
+    .banner .banner-text .text h1 {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .banner .banner-text .text p {
+        font-size: 16px;
+        padding: 5px;
+    }
+    blockquote {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #services,
+    #project {
+        position: relative;
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        /* border: 1px solid red; */
+    }
+    #services h1,
+    #about h1,
+    #project h1,
+    #contact h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .services-wrapper {
+        display: block;
+        width: 100%;
+        top: 0;
+        transform: none;
+        text-align: center;
+    }
+    .data-analysis,
+    .data-analytics,
+    .dashboard,
+    .web-development {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px;
+    }
+    .data-analysis,
+    .data-analytics,
+    .dashboard {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #333;
+    }
+    .data-analysis .image img,
+    .data-analytics .image img,
+    .dashboard .image img,
+    .web-development .image img {
+        width: 100%;
+        height: 200px;
+    }
+    .data-analysis .text-wrap h2,
+    .data-analytics .text-wrap h2,
+    .dashboard .text-wrap h2,
+    .web-development .text-wrap h2 {
+        font-size: 19px;
+    }
+    .data-analysis .text-wrap p,
+    .data-analytics .text-wrap p,
+    .dashboard .text-wrap p,
+    .web-development .text-wrap p {
+        font-size: 14px;
+    }
+    #about {
+        padding: 10px;
+        margin-top: 30px;
+        height: auto;
+    }
+    #contact {
+        padding: 10px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    #about .about-me,
+    #contact .my-contact {
+        width: 100%;
+    }
+    #contact .my-contact {
+        font-size: 16px;
+    }
+    #about .about-me .wrapper p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .project {
+        width: 100%;
+    }
+    .projects {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+        border: none;
+    }
+    .projects:not(:last-child) {
+        border-bottom: 1px solid #333;
+    }
+    .projects .project-picture {
+        width: 100%;
+        height: 250px;
+        background-color: none;
+    }
+    .projects .project-text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .projects .project-text h2 {
+        font-size: 20px;
+        color: #000;
+    }
+    .projects .project-text h3 {
+        font-size: 19px;
+    }
+    .projects .project-text p {
+        font-size: 14px;
+        color: #777;
+    }
+    .projects .project-picture img {
+        width: 100%;
+        height: 100%;
+    }
+    .read-more-btn {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .menu li:not(:nth-child(-n+5)) {
+        width: 30px;
+        display: inline-flex;
+        margin: 20px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-alt {
+        position: relative;
+        display: block;
+        margin-left: -20px;
+        margin-top: 30px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+    .nav ul {
+        width: 70%;
+        /* border: 1px solid green; */
+    }
+    .nav ul li {
+        padding: 5px;
+    }
+    .nav-wrapper {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .nav-wrapper li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+    input[type=checkbox]:checked~.nav-wrapper {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: black;
+        /* border: 1px solid red; */
+    }
+    .banner-wrapper {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        /* border: 1px solid green; */
+    }
+    .banner .banner-text {
+        width: 100%;
+        background-image: none;
+        z-index: 2;
+        display: flex;
+    }
+    .banner .banner-image {
+        width: 0px;
+        display: none;
+        /* border: 1px solid yellow; */
+    }
+    .banner .banner-image img {
+        width: 0px;
+        display: none;
+    }
+    .banner .banner-text .text {
+        margin-left: 10px;
+    }
+    .banner .banner-text .text h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .banner .banner-text .text p {
+        font-size: 24px;
+        padding: 10px;
+    }
+    blockquote {
+        font-size: 24px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #services,
+    #project {
+        position: relative;
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        /* border: 1px solid red; */
+    }
+    #services h1,
+    #about h1,
+    #project h1,
+    #contact h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .services-wrapper {
+        display: block;
+        width: 100%;
+        top: 0;
+        transform: none;
+        text-align: center;
+    }
+    .data-analysis,
+    .data-analytics,
+    .dashboard,
+    .web-development {
+        width: calc(100%/1.5);
+        height: auto;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0px;
+    }
+    .data-analysis,
+    .data-analytics,
+    .dashboard {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #333;
+    }
+    .data-analysis .image img,
+    .data-analytics .image img,
+    .dashboard .image img,
+    .web-development .image img {
+        width: 100%;
+        height: 320px;
+    }
+    .data-analysis .text-wrap h2,
+    .data-analytics .text-wrap h2,
+    .dashboard .text-wrap h2,
+    .web-development .text-wrap h2 {
+        font-size: 24px;
+    }
+    .data-analysis .text-wrap p,
+    .data-analytics .text-wrap p,
+    .dashboard .text-wrap p,
+    .web-development .text-wrap p {
+        font-size: 16px;
+    }
+    #about {
+        padding: 25px;
+        margin-top: 40px;
+        height: auto;
+    }
+    #contact {
+        padding: 15px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+    #about .about-me,
+    #contact .my-contact {
+        width: 80%;
+    }
+    #contact .my-contact {
+        font-size: 16px;
+    }
+    #about .about-me .wrapper p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .project {
+        width: 100%;
+        display: inline-block;
+    }
+    .projects {
+        width: calc(100%/1.5);
+        height: auto;
+        display: block;
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+    }
+    .projects:not(:last-child) {
+        border-bottom: 1px solid #333;
+    }
+    .projects .project-picture {
+        width: 100%;
+        height: 320px;
+        background-color: none;
+    }
+    .projects .project-text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .projects .project-text h2 {
+        font-size: 20px;
+        color: #000;
+    }
+    .projects .project-text h3 {
+        font-size: 19px;
+    }
+    .projects .project-text p {
+        font-size: 14px;
+        color: #777;
+    }
+    .projects .project-picture img {
+        width: 100%;
+        height: 100%;
+    }
+    .read-more-btn {
+        margin-top: 15px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* @media only screen and (min-width: 992px) {
+
+    .nav-wrapper {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+} */
