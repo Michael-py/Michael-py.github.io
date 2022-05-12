@@ -19,9 +19,6 @@
     <div id="navbar" class="navbar topnav">
         <!-- LOGO -->
         <div class="logo">MB DAIRO</div>
-        <div class="logo-alt">
-            <img src="assets/michaeldairo.png" alt="a picture of michael bidemi dairo">
-        </div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
             <!-- USING CHECKBOX HACK -->
@@ -42,7 +39,7 @@
                     <a href="#contact">contact</a>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1MfSLG851lKBhPCdaiwVPKABAzNCkgRRd/view?usp=sharing" target="blank_">resume</a>
+                    <a href="https://drive.google.com/file/d/1LvHaTKerpGpJaKUA-ltRcH9jCXm4DSFV/view?usp=sharing" target="blank_">resume</a>
                 </li>
                 <li>
                     <a href="github.com/michael-py"><i class="fa fa-github"></i></a>
@@ -77,7 +74,7 @@
 
                         <button class="read-more-btn w3-text-white 
                             w3-button w3-teal w3-hover-grey w3-round">
-                            <a href="https://drive.google.com/file/d/1MfSLG851lKBhPCdaiwVPKABAzNCkgRRd/view?usp=sharing" target="blank_">view resume</a>
+                            <a href="https://drive.google.com/file/d/1LvHaTKerpGpJaKUA-ltRcH9jCXm4DSFV/view?usp=sharing" target="blank_">view resume</a>
                         </button>
                     </div>
 
@@ -86,7 +83,7 @@
                 </div>
 
                 <div class="banner-image">
-                    <img src="assets/michaeldairo.png" alt="a picture of michael bidemi dairo">
+                    <img src="assets/michaeldairo.jpg" alt="a picture of michael bidemi dairo">
                 </div>
             </div>
         </div>
@@ -200,15 +197,20 @@
         <h1>about me</h1>
         <div class="about-me">
             <div class="wrapper">
+                <div class="logo-alt">
+                    <img src="assets/michaeldairo.jpg" alt="a picture of michael bidemi dairo">
+                </div>
                 <p>
-                    Hi, my name is Michael Dairo and I am a Data Analyst/Scientist as well as a freelance web developer. I am a university graduate from the Federal University of Technology Akure where I studied Fisheries and Aquaculture Technology.
+                    Hi, my name is Michael Dairo and I am a Data Analyst/Scientist as well as a freelance web developer. I am a university graduate from the Federal University of Technology Akure.
                 </p><br>
                 <p>
                     My passion for data and data analytics started off during my final year in the university. I was faced with a challenge of analysing my final year project data using statistical methodologies. Having had a brief stint in statistics during my coursework,
-                    I studied assiduously, making use of vast online resources to conquer the challenge at hand. I have since gone ahead to further my studies in the field of Data Analysis and Machine Learning by taking online courses.</p>
+                    I studied assiduously, making use of vast online resources to conquer the challenge at hand. I have since gone ahead to further my studies in the field of Data Analysis/Science, Machine Learning and Predictive Analytics by taking online
+                    courses.
+                </p>
                 <br>
                 <p>
-                    I am currently working as a Sales Data Analyst for Edi-Jen Group Nig Ltd (<b>3 years</b>) while freelancing as a data Data Analyst.
+                    I am currently working as an Accounts Officer(Sales Data Analyst) for Edi-Jen Group Nig Ltd while freelancing as a data Data Analyst.
                 </p>
             </div>
         </div>
@@ -276,8 +278,8 @@
                                 and structured dataset was modeled using different Machine Learning Classification Algorithms and predictions were made to successfully classify a tweet into one of the four (4) sentiment classes, namely; <em>positive, negative, neutral and factual</em>.
                                 An accuracy of 75% was recorded from the best performing algorithm.
                             </p>
-                            <p>Link to the project on
-                                <a href="https://github.com/Michael-py/tweets_sentiment_analysis">Github</a>
+                            <p>The project can be found on
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/tweets_sentiment_analysis">Github</a></span>
                             </p>
                         </div>
 
@@ -346,7 +348,8 @@
                             </p>
 
                             <p>
-                                Link to the project on <a href="https://github.com/Michael-py/EDSA_Hackathon">Github</a>
+                                Link to the project on
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/EDSA_Hackathon">Github</a></span>
                             </p>
                         </div>
 
@@ -418,7 +421,76 @@
                             </p>
 
                             <p>Here's a link to the project detailing the processes taken and the final outcome on
-                                <a href="https://github.com/Michael-py/load-shortfall-regression-predict-api/blob/master/EDSA-Team-VI-starter-notebook-Final.ipynb">Github</a>
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/load-shortfall-regression-predict-api/blob/master/EDSA-Team-VI-starter-notebook-Final.ipynb">Github</a></span>
+                            </p>
+                        </div>
+
+                        <!-- Model Footer -->
+                        <footer class="w3-container w3-black">
+                            <button class="w3-margin w3-round w3-right 
+                            w3-red w3-button w3-hover-red" onclick="document.getElementById('electricity-challenge')
+                            .style.display='none'">
+                            Close
+                        </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project4 projects">
+            <div class="project-picture">
+                <img src="assets/recommendations.jpg" alt="Movie Recommender Challenge">
+            </div>
+
+            <div class="project-text">
+                <h2>Movie Recommendation System</h2>
+                <p>
+                    In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis...
+                </p>
+                <button onclick="document.getElementById('electricity-challenge')
+                    .style.display='block'" class="read-more-btn w3-text-white 
+                    w3-button w3-teal w3-hover-grey w3-round">
+                    Read more
+                </button>
+
+                <div id="recommender-challenge" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content">
+                        <!-- Model Header -->
+                        <!-- Model Close Button in the heading-->
+                        <header class="w3-container 
+                            w3-grey w3-text-black">
+
+                            <!-- <span onclick="document.getElementById(
+                                'sentiment-analysis').style.display='none'" class="w3-button w3-display-topright 
+                                w3-white w3-text-gray w3-hover-red">
+                                x
+                            </span> -->
+                            <h2>Movie Recommender Challenge</h2>
+                        </header>
+
+                        <!-- Model Content -->
+                        <div class="w3-container w3-black w3-text-grey">
+
+                            <h3>The Problem</h3>
+
+                            <p>In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application
+                                where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, construct a recommendation algorithm based on
+                                content or collaborative filtering. Providing an accurate and robust solution to this challenge has immense economic potential, with users of the system being given personalised recommendations - generating platform affinity
+                                for the streaming services which best facilitates their audience's viewing.
+                            </p> <br>
+                            <p>
+                                Data for this project was sourced from kaggle.
+                            </p>
+
+                            <h3>The Solution</h3>
+                            <p>
+                                There are two major types of recommender systems; Collaborative and Content Based recommender systems. To tackle this problem, a content based recommendation system was developed using different categories of meta data; Movie description, keywords, tags,
+                                cast and crew etc.
+                            </p>
+
+                            <p>Here's a link to the project detailing the processes taken and the final outcome on
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/Movie_Recommendation_System/blob/main/recommender_system.ipynb">Github</a></span>
                             </p>
                         </div>
 

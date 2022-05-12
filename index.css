@@ -45,18 +45,17 @@ li {
 }
 
 .logo-alt {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    float: left;
-    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    position: relative;
     display: none;
 }
 
 .logo-alt img {
-    width: 100px;
+    width: 200px;
     height: auto;
-    clip-path: circle();
 }
 
 
@@ -148,11 +147,11 @@ input[type=checkbox] {
 }
 
 .banner .banner-image img {
-    width: 600px;
+    width: 400px;
     position: absolute;
     z-index: 1;
     top: 50%;
-    left: 75%;
+    left: 65%;
     transform: translate(-70%, -50%);
 }
 
@@ -310,7 +309,7 @@ blockquote {
 }
 
 .project {
-    max-width: 900px;
+    width: 900px;
     display: block;
     position: relative;
 }
@@ -620,7 +619,7 @@ blockquote {
         display: block;
     }
     .logo {
-        display: none;
+        font-size: 24px;
     }
     .logo-alt {
         position: relative;
