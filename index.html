@@ -7,6 +7,7 @@
     <title>Michael Bidemi Dairo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,16 +40,16 @@
                     <a href="#contact">contact</a>
                 </li>
                 <li>
-                    <a href="https://drive.google.com/file/d/1LvHaTKerpGpJaKUA-ltRcH9jCXm4DSFV/view?usp=sharing" target="blank_">resume</a>
+                    <a href="https://drive.google.com/file/d/1JubSfuYTsBjbmsWn54Yc_lSra3rTOJ5o/view?usp=sharing" target="_blank">resume</a>
                 </li>
                 <li>
-                    <a href="github.com/michael-py"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/Michael-py/portfolio" target="blank_"><i class="fa fa-github"></i></a>
                 </li>
                 <li>
-                    <a href="linkedin.com/in/michaelbidemidairo"><i class="fa fa-linkedin"></i></a>
+                    <a href="linkedin.com/in/michaelbidemidairo" target="blank_"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="kaggle.com/michaeldairo"><i class="fa fa-kaggle">k</i></a>
+                    <a href="kaggle.com/michaeldairo" target="blank_"><i class="fa fa-kaggle">k</i></a>
                 </li>
             </div>
         </ul>
@@ -74,7 +75,7 @@
 
                         <button class="read-more-btn w3-text-white 
                             w3-button w3-teal w3-hover-grey w3-round">
-                            <a href="https://drive.google.com/file/d/1LvHaTKerpGpJaKUA-ltRcH9jCXm4DSFV/view?usp=sharing" target="blank_">view resume</a>
+                            <a href="https://drive.google.com/file/d/1JubSfuYTsBjbmsWn54Yc_lSra3rTOJ5o/view?usp=sharing" target="_blank">view resume</a>
                         </button>
                     </div>
 
@@ -204,13 +205,17 @@
                     Hi, my name is Michael Dairo and I am a Data Analyst/Scientist as well as a freelance web developer. I am a university graduate from the Federal University of Technology Akure.
                 </p><br>
                 <p>
-                    My passion for data and data analytics started off during my final year in the university. I was faced with a challenge of analysing my final year project data using statistical methodologies. Having had a brief stint in statistics during my coursework,
-                    I studied assiduously, making use of vast online resources to conquer the challenge at hand. I have since gone ahead to further my studies in the field of Data Analysis/Science, Machine Learning and Predictive Analytics by taking online
-                    courses.
+                    My passion for data and data analytics started off during my final year in the university. I was faced with the challenge of analyzing my final year project data using statistical methodologies. Having had a brief stint in statistics during my coursework,
+                    I studied assiduously, making use of the vast online resources to conquer the challenge at hand. I have since gone ahead to further my studies in the field of Data Analytics and Machine Learning by taking online courses.
                 </p>
                 <br>
                 <p>
-                    I am currently working as an Accounts Officer(Sales Data Analyst) for Edi-Jen Group Nig Ltd while freelancing as a data Data Analyst.
+                    I would love to work in a role where I am able to combine my passion for learning and technical skills to help businesses and organizations understand their data and make better data-driven decisions, because I believe that data has a better idea.
+                </p>
+                <br>
+                <p>
+                    <em>My skills:</em> <b>Python programming, SQL (MySQL & PostgreSQL), Machine Learning, Statistical and Data Analysis, Data Mining, Web Scraping, Advanced MS Excel, MS PowerBi, Data Visualization, Regression Analysis, Classification, Clustering,
+                    Django Web Framework, Javascript, ReactJs</b>
                 </p>
             </div>
         </div>
@@ -219,9 +224,150 @@
 
     <div id="project" class="project">
         <h1>projects</h1>
+
+        <div class="project4 projects">
+            <div class="project-picture">
+                <img src="assets/recommendations.jpg" alt="Movie Recommender Challenge">
+            </div>
+
+            <div class="project-text">
+                <h2>Movie Recommendation System</h2>
+                <p>
+                    In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis...
+                </p>
+                <button onclick="document.getElementById('recommender-challenge')
+                    .style.display='block'" class="read-more-btn w3-text-white 
+                    w3-button w3-teal w3-hover-grey w3-round">
+                    Read more
+                </button>
+
+                <div id="recommender-challenge" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content">
+                        <!-- Model Header -->
+                        <!-- Model Close Button in the heading-->
+                        <header class="w3-container 
+                            w3-grey w3-text-black">
+
+                            <!-- <span onclick="document.getElementById(
+                                'sentiment-analysis').style.display='none'" class="w3-button w3-display-topright 
+                                w3-white w3-text-gray w3-hover-red">
+                                x
+                            </span> -->
+                            <h2>Movie Recommender Challenge</h2>
+                        </header>
+
+                        <!-- Model Content -->
+                        <div class="w3-container w3-black w3-text-grey">
+
+                            <h3>The Problem</h3>
+
+                            <p>In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application
+                                where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, construct a recommendation algorithm based on
+                                content or collaborative filtering. Providing an accurate and robust solution to this challenge has immense economic potential, with users of the system being given personalised recommendations - generating platform affinity
+                                for the streaming services which best facilitates their audience's viewing.
+                            </p> <br>
+                            <p>
+                                Data for this project was sourced from kaggle.
+                            </p>
+
+                            <h3>The Solution</h3>
+                            <p>
+                                There are two major types of recommender systems; Collaborative and Content Based recommender systems. To tackle this problem, a content based recommendation system was developed using different categories of meta data; Movie description, keywords, tags,
+                                cast and crew etc.
+                            </p>
+
+                            <p>Here's a link to the project detailing the processes taken and the final outcome on
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/Movie_Recommendation_System" target="_blank">Github</a></span>
+                            </p>
+                        </div>
+
+                        <!-- Model Footer -->
+                        <footer class="w3-container w3-black">
+                            <button class="w3-margin w3-round w3-right 
+                            w3-red w3-button w3-hover-red" onclick="document.getElementById('recommender-challenge')
+                            .style.display='none'">
+                            Close
+                        </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project2 projects">
+            <div class="project-picture">
+                <img src="assets/lang-img.png" alt="South Africa Languages Classification">
+            </div>
+
+            <div class="project-text">
+                <h2>South Africa Languages Classification</h2>
+
+                <p>South Africa is a multicultural society that is characterised by its rich linguistic diversity. Language is an indispensable tool that can be used to deepen democracy and also contribute to the social,...</p>
+
+                <button onclick="document.getElementById('language-challenge')
+                    .style.display='block'" class="read-more-btn w3-text-white 
+                    w3-button w3-teal w3-hover-grey w3-round">
+                    Read more
+                </button>
+
+                <div id="language-challenge" class="w3-modal w3-animate-zoom">
+                    <div class="w3-modal-content">
+                        <!-- Model Header -->
+                        <!-- Model Close Button in the heading-->
+                        <header class="w3-container 
+                        w3-grey w3-text-black">
+
+                            <!-- <span onclick="document.getElementById(
+                            'sentiment-analysis').style.display='none'" class="w3-button w3-display-topright 
+                            w3-white w3-text-gray w3-hover-red">
+                            x
+                        </span> -->
+                            <h2>South Africa Languages Classification</h2>
+                        </header>
+
+                        <!-- Model Content -->
+                        <div class="w3-container w3-black w3-text-grey">
+
+                            <h3>The Problem Statement</h3>
+                            <p>
+                                South Africa is a multicultural society that is characterised by its rich linguistic diversity. Language is an indispensable tool that can be used to deepen democracy and also contribute to the social, cultural, intellectual, economic and political life
+                                of the South African society.
+                            </p><br>
+                            <p>
+                                The country is multilingual with 11 official languages, each of which is guaranteed equal status. Most South Africans are multilingual and able to speak at least two or more of the official languages.
+                            </p><br>
+                            <p>
+                                In this challenge, you will take text which is in any of South Africa's 11 Official languages and identify which language the text is in.
+                            </p><br>
+
+                            <h3>The Solution</h3>
+                            <p>
+                                This is a text classification problem. As such, Natural Language Processing techniques were employed clean the data and engineer new features. Finally Supervised Machine Learning Algorithms were used to model and successfully classify a language text
+                                into its appropriate language class with a 96% accuracy on datasets the algorithms had not yet seen.
+                            </p>
+
+                            <p>
+                                Link to the project on
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/South_African_Languages_Classification" target="_blank">Github</a></span>
+                            </p>
+                        </div>
+
+                        <!-- Model Footer -->
+                        <footer class="w3-container w3-black">
+                            <button class="w3-margin w3-round w3-right 
+                            w3-red w3-button w3-hover-red" onclick="document.getElementById('language-challenge')
+                            .style.display='none'">
+                            Close
+                        </button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="project1 projects">
             <div class="project-picture">
-                <img src="assets/sentiment-img.jpeg" alt="tweets_sentiment_analysis">
+                <img src="assets/sentiment_analysis.jpg" alt="tweets_sentiment_analysis">
             </div>
 
             <div class="project-text">
@@ -279,7 +425,7 @@
                                 An accuracy of 75% was recorded from the best performing algorithm.
                             </p>
                             <p>The project can be found on
-                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/tweets_sentiment_analysis">Github</a></span>
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/tweets_sentiment_analysis" target="_blank">Github</a></span>
                             </p>
                         </div>
 
@@ -290,76 +436,6 @@
                                 .style.display='none'">
                                 Close
                             </button>
-                        </footer>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project2 projects">
-            <div class="project-picture">
-                <img src="assets/lang-img.png" alt="South Africa Languages Classification">
-            </div>
-
-            <div class="project-text">
-                <h2>South Africa Languages Classification</h2>
-
-                <p>South Africa is a multicultural society that is characterised by its rich linguistic diversity. Language is an indispensable tool that can be used to deepen democracy and also contribute to the social,...</p>
-
-                <button onclick="document.getElementById('language-challenge')
-                    .style.display='block'" class="read-more-btn w3-text-white 
-                    w3-button w3-teal w3-hover-grey w3-round">
-                    Read more
-                </button>
-
-                <div id="language-challenge" class="w3-modal w3-animate-zoom">
-                    <div class="w3-modal-content">
-                        <!-- Model Header -->
-                        <!-- Model Close Button in the heading-->
-                        <header class="w3-container 
-                        w3-grey w3-text-black">
-
-                            <!-- <span onclick="document.getElementById(
-                            'sentiment-analysis').style.display='none'" class="w3-button w3-display-topright 
-                            w3-white w3-text-gray w3-hover-red">
-                            x
-                        </span> -->
-                            <h2>South Africa Languages Classification</h2>
-                        </header>
-
-                        <!-- Model Content -->
-                        <div class="w3-container w3-black w3-text-grey">
-
-                            <h3>The Problem Statement</h3>
-                            <p>
-                                South Africa is a multicultural society that is characterised by its rich linguistic diversity. Language is an indispensable tool that can be used to deepen democracy and also contribute to the social, cultural, intellectual, economic and political life
-                                of the South African society.
-                            </p><br>
-                            <p>
-                                The country is multilingual with 11 official languages, each of which is guaranteed equal status. Most South Africans are multilingual and able to speak at least two or more of the official languages.
-                            </p><br>
-                            <p>
-                                In this challenge, you will take text which is in any of South Africa's 11 Official languages and identify which language the text is in.
-                            </p><br>
-
-                            <h3>The Solution</h3>
-                            <p>
-                                This is a text classification problem. As such, Natural Language Processing techniques were employed clean the data and engineer new features. Finally Supervised Machine Learning Algorithms were used to model and successfully classify a language text
-                                into its appropriate language class with a 96% accuracy on datasets the algorithms had not yet seen.
-                            </p>
-
-                            <p>
-                                Link to the project on
-                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/EDSA_Hackathon">Github</a></span>
-                            </p>
-                        </div>
-
-                        <!-- Model Footer -->
-                        <footer class="w3-container w3-black">
-                            <button class="w3-margin w3-round w3-right 
-                            w3-red w3-button w3-hover-red" onclick="document.getElementById('language-challenge')
-                            .style.display='none'">
-                            Close
-                        </button>
                         </footer>
                     </div>
                 </div>
@@ -421,7 +497,7 @@
                             </p>
 
                             <p>Here's a link to the project detailing the processes taken and the final outcome on
-                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/load-shortfall-regression-predict-api/blob/master/EDSA-Team-VI-starter-notebook-Final.ipynb">Github</a></span>
+                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/Spain_Electricity_Load_Shortfall" target="_blank">Github</a></span>
                             </p>
                         </div>
 
@@ -438,74 +514,10 @@
             </div>
         </div>
 
-        <div class="project4 projects">
-            <div class="project-picture">
-                <img src="assets/recommendations.jpg" alt="Movie Recommender Challenge">
-            </div>
-
-            <div class="project-text">
-                <h2>Movie Recommendation System</h2>
-                <p>
-                    In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis...
-                </p>
-                <button onclick="document.getElementById('recommender-challenge')
-                    .style.display='block'" class="read-more-btn w3-text-white 
-                    w3-button w3-teal w3-hover-grey w3-round">
-                    Read more
-                </button>
-
-                <div id="recommender-challenge" class="w3-modal w3-animate-zoom">
-                    <div class="w3-modal-content">
-                        <!-- Model Header -->
-                        <!-- Model Close Button in the heading-->
-                        <header class="w3-container 
-                            w3-grey w3-text-black">
-
-                            <!-- <span onclick="document.getElementById(
-                                'sentiment-analysis').style.display='none'" class="w3-button w3-display-topright 
-                                w3-white w3-text-gray w3-hover-red">
-                                x
-                            </span> -->
-                            <h2>Movie Recommender Challenge</h2>
-                        </header>
-
-                        <!-- Model Content -->
-                        <div class="w3-container w3-black w3-text-grey">
-
-                            <h3>The Problem</h3>
-
-                            <p>In today's technology driven world, recommender systems are socially and economically critical to ensure that individuals can make optimised choices surrounding the content they engage with on a daily basis. One application
-                                where this is especially true is movie recommendations; where intelligent algorithms can help viewers find great titles from tens of thousands of options. With this context, construct a recommendation algorithm based on
-                                content or collaborative filtering. Providing an accurate and robust solution to this challenge has immense economic potential, with users of the system being given personalised recommendations - generating platform affinity
-                                for the streaming services which best facilitates their audience's viewing.
-                            </p> <br>
-                            <p>
-                                Data for this project was sourced from kaggle.
-                            </p>
-
-                            <h3>The Solution</h3>
-                            <p>
-                                There are two major types of recommender systems; Collaborative and Content Based recommender systems. To tackle this problem, a content based recommendation system was developed using different categories of meta data; Movie description, keywords, tags,
-                                cast and crew etc.
-                            </p>
-
-                            <p>Here's a link to the project detailing the processes taken and the final outcome on
-                                <span style="color: teal; text-transform: uppercase;"><a href="https://github.com/Michael-py/Movie_Recommendation_System/blob/main/recommender_system.ipynb">Github</a></span>
-                            </p>
-                        </div>
-
-                        <!-- Model Footer -->
-                        <footer class="w3-container w3-black">
-                            <button class="w3-margin w3-round w3-right 
-                            w3-red w3-button w3-hover-red" onclick="document.getElementById('recommender-challenge')
-                            .style.display='none'">
-                            Close
-                        </button>
-                        </footer>
-                    </div>
-                </div>
-            </div>
+        <div style="font-size: 1.1em; padding: 1%; margin: 1%;">
+            <p>For more projects, check out my <a href="https://github.com/Michael-py/portfolio" target="_blank"><span style="color: teal;">github portfolio</span></a>. It is regularly updated with new projects</p>
         </div>
+
     </div>
 
     <div id="contact">
