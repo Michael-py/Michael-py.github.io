@@ -154,6 +154,7 @@ input[type=checkbox] {
     top: 50%;
     left: 65%;
     transform: translate(-70%, -50%);
+    border-radius: 20%;
 }
 
 .banner .banner-text .text {
