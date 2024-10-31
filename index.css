@@ -176,7 +176,7 @@ input[type=checkbox] {
     padding: 10px;
     color: #555;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
 blockquote {
